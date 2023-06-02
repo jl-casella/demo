@@ -1,0 +1,5 @@
+{
+  "editor.formatOnSave": true,
+  "cSpell.words": ["precached", "websockets"],
+  "typescript.tsdk": "node_modules/typescript/lib"
+}

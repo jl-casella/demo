@@ -1,0 +1,14 @@
+# Sol Analyzer demo
+
+This demo project is a `yarn workspace` than contains:
+
+- a NodeJS + GraphQL backend that runs in a Docker along whith the ConsenSys/mythril tool
+- A VSCode extension
+
+## Usage
+
+1. Run the `packages/api` dockerized backend
+
+2. Build and run the `packages/ui` VSCode extension that consumes that backend
+
+3. Play around with the VScode extension and some Solidity code to find potential code vulnerabilities

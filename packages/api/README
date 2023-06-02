@@ -1,0 +1,55 @@
+# Node.js Backend Container with Mythril Analyzer
+
+This Docker container provides a Node.js backend server that integrates with the Mythril smart contract security analyzer through a GraphQL API.
+
+## Usage
+
+1. Install Docker:
+
+   - Visit the Docker website (https://www.docker.com/) and follow the instructions to install Docker on your system.
+   - Make sure Docker is running and accessible from the command line.
+
+2. Build the Node + GraphQl backend:
+
+   ```
+   yarn build
+   ```
+
+3. Build the Backend Docker Container:
+
+   - Open a terminal or command prompt.
+   - Navigate to the directory containing the Dockerfile and backend source code.
+   - Run the following command to build the backend Docker container:
+     ```
+     docker build -t backend-container .
+     ```
+   - This command builds the Docker image based on the Dockerfile and tags it as `backend-container`.
+
+4. Run the Backend Docker Container:
+
+   - Once the container is built, you can run the backend container by executing the following command:
+     ```
+     docker run -p 3000:3000 backend-container
+     ```
+   - This command starts a new Docker container based on the `backend-container` image and maps port 3000 of the container to port 3000 of the host machine.
+
+5. Access the GraphQL API:
+
+   - Open your preferred GraphQL client (e.g., GraphQL Playground or Altair).
+   - Make a POST request to `http://localhost:3000/graphql`.
+   - Use the following query to analyze a contract:
+     ```graphql
+     query {
+       analyze($bytecode: String!) {
+         output
+       }
+     }
+     ```
+   - Replace `$bytecode` with the actual contract code.
+
+6. Stop the Backend Container:
+
+   - To stop the backend container, press `Ctrl + C` in the terminal or command prompt where it is running.
+
+7. Cleanup:
+   - If desired

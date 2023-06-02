@@ -1,0 +1,17 @@
+{
+  "name": "demo",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "scripts": {
+    "lint": "eslint . --ext .js,.ts",
+    "lint:fix": "eslint . --ext .js,.ts --fix",
+    "format": "prettier --write ."
+  },
+  "devDependencies": {
+    "eslint": "^8.41.0",
+    "eslint-config-prettier": "^8.8.0",
+    "eslint-plugin-prettier": "^4.2.1",
+    "prettier": "^2.8.8"
+  }
+}

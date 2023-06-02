@@ -1,0 +1,11 @@
+{
+  "compilerOptions": {
+    "baseUrl": ".",
+    "paths": {
+      "@demo/api/*": ["./api/src/*"],
+      "@demo/ui/*": ["./ui/src/*"]
+    }
+  },
+  "include": ["./api", "./ui"],
+  "exclude": ["node_modules"]
+}

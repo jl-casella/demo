@@ -1,0 +1,21 @@
+{
+    "name": "api",
+    "version": "1.0.0",
+    "main": "index.js",
+    "license": "MIT",
+    "author": "Jose Luis Casella",
+    "scripts": {
+        "build": "tsc",
+        "start": "ts-node src/index.ts"
+    },
+    "dependencies": {
+        "apollo-server-express": "^3.4.1",
+        "child_process": "^1.0.2",
+        "express": "^4.17.1",
+        "graphql": "^16.6.0"
+    },
+    "devDependencies": {
+        "ts-node": "^10.9.1",
+        "typescript": "^5.0.4"
+    }
+}

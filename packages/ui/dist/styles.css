@@ -1,0 +1,135 @@
+/*!***********************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js!./webview/App.scss ***!
+  \***********************************************************************************************************/
+@charset "UTF-8";
+body {
+  background-color: rgb(50, 48, 48);
+}
+
+.app h1 {
+  font-family: Arial, Helvetica, sans-serif;
+  color: white;
+  margin-left: 10px;
+  line-height: 20px;
+}
+.app h2 {
+  font-family: Arial, Helvetica, sans-serif;
+  color: white;
+  margin-left: 10px;
+  line-height: 20px;
+}
+.app .code-container {
+  margin: 10px;
+}
+.app .code-container p {
+  font-family: Arial, Helvetica, sans-serif;
+  color: white;
+}
+.app .code-container textarea {
+  width: calc(100% - 10px);
+  height: 150px;
+}
+.app .actions-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: calc(100% - 20px);
+}
+.app .actions-header button {
+  height: 30px;
+  cursor: pointer;
+}
+.app .test-info {
+  margin: 10px;
+  font-family: Arial, Helvetica, sans-serif;
+  color: white;
+  margin-bottom: 20px;
+}
+.app .collapsible {
+  margin-left: 10px;
+  margin-right: 10px;
+  width: calc(100% - 20px);
+  margin-bottom: 10px;
+}
+.app .collapsible input {
+  position: absolute;
+  opacity: 0;
+  z-index: -1;
+}
+.app .collapsible input:checked + .tab-label {
+  background: #1a252f;
+}
+.app .collapsible input:checked + .tab-label::after {
+  transform: rotate(90deg);
+}
+.app .collapsible input:checked ~ .tab-content {
+  max-height: 100vh;
+  padding: 1em;
+}
+.app .collapsible .tabs {
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 4px 4px -2px rgba(0, 0, 0, 0.5);
+}
+.app .collapsible .tabs .tab {
+  width: 100%;
+  color: white;
+  overflow: hidden;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.app .collapsible .tabs .tab-label {
+  display: flex;
+  justify-content: space-between;
+  padding: 1em;
+  background: #2c3e50;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bold;
+  cursor: pointer;
+}
+.app .collapsible .tabs .tab-label:hover {
+  background: #1a252f;
+}
+.app .collapsible .tabs .tab-label::after {
+  content: "❯";
+  width: 1em;
+  height: 1em;
+  text-align: center;
+  transition: all 0.35s;
+}
+.app .collapsible .tabs .tab-content {
+  max-height: 0;
+  padding: 0 1em;
+  color: #2c3e50;
+  background: white;
+  transition: all 0.35s;
+}
+.app .collapsible .tabs .tab-close {
+  display: flex;
+  justify-content: flex-end;
+  padding: 1em;
+  font-size: 0.75em;
+  background: #2c3e50;
+  cursor: pointer;
+}
+.app .collapsible .tabs .tab-close:hover {
+  background: #1a252f;
+}
+.app .collapsible .tabs .tab .spacer {
+  height: 20px;
+}
+.app .collapsible .tabs .tab .info {
+  display: flex;
+  height: 25px;
+}
+.app .collapsible .tabs .tab .info-key {
+  font-weight: bold;
+  line-height: 20px;
+  margin: 0;
+}
+.app .collapsible .tabs .tab .info-value {
+  padding-left: 5px;
+  line-height: 20px;
+  margin: 0;
+}
+
+/*# sourceMappingURL=styles.css.map*/

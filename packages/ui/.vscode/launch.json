@@ -1,0 +1,17 @@
+{
+    "version": "1.0.0",
+    "configurations": [
+        {
+            "name": "Sol Analyzer",
+            "type": "extensionHost",
+            "request": "launch",
+            "runtimeExecutable": "${execPath}",
+            "args": [
+                "--extensionDevelopmentPath=${workspaceFolder}"
+            ],
+            "outFiles": [
+                "${workspaceFolder}/dist/**/*.js"
+            ],
+        }
+    ]
+  }

@@ -1,0 +1,29 @@
+# Frontend for the Sol Analyzer
+
+## Usage
+
+1. Compile the React application:
+
+   ```
+   yarn webview:build
+   ```
+
+2. Compile the VSCode extension:
+
+   ```
+   yarn compile
+   ```
+
+3. On the UI folder perss F5 to open the extension debugger
+
+- More info about VSCode extensions development is available at: https://code.visualstudio.com/api/get-started/your-first-extension
+
+## Development
+
+1. Run the React application with webpack dev server:
+
+   ```
+   yarn webview:start
+   ```
+
+- You will have Hot Reload
